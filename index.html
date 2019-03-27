@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Matt Titmuss">
+    <title>StopOver!</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/scss/main.css">
+    <!--fonts & icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!---->
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="left-container">
+            <div class="title-card">
+                <img src="./assets/imgs/stopover.jpg" alt="stopover logo">
+                <h1>StopOver!</h1>
+                <!--maybe a slogan on larger screens?-->
+            </div>
+
+            <form>
+                <div class="search-bar">
+                    <input class="text-input" type="search" name="search" id="searchInput" value="Where to?">
+                </div>
+                <button type="submit" class="main-btn">Go!</button>
+            </form>
+
+            <div class="option-bar">
+                <div class="btn hotel"><i class="fas fa-bed"></i></div>
+                <div class="btn tourist-att"><i class="fas fa-map-marked-alt"></i></div>
+                <div class="btn bars"><i class="fas fa-glass-martini-alt"></i></div>
+            </div>
+        </div>
+
+        <!--maps containers-->
+        <div id="right-container">
+            <div id="map-canvas"></div>
+        </div>
+
+        <!--maps information conatainer-->
+        <div id="bottom-container">
+            <div id="map-info"></div>
+        </div>
+    </div>
+</body>
+
+</html>

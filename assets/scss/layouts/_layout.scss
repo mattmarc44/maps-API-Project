@@ -1,0 +1,25 @@
+#wrapper {
+    display: flex;
+    flex-direction: row;
+
+    #left-container {
+        display: flex; //a flex item can also be a container
+        flex-direction: column; //this shows the content in the left container vertically 
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    
+        #main-ui {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+    }
+    
+    #right-container {
+        flex: 1;
+    }
+}
