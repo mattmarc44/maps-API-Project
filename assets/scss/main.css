@@ -1,3 +1,7 @@
+/*
+@mixin tablets {
+    @media (max-width:)
+}*/
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 * {
   margin: 0;
@@ -5,12 +9,12 @@
 }
 
 body {
-  background: #b0b8ff;
+  background: #01002e;
   overflow: hidden;
 }
 
 #map-canvas {
-  height: 200px;
+  height: 100vh;
   background-color: green;
 }
 
@@ -44,6 +48,14 @@ body {
   height: 100vh;
 }
 
+@media (min-width: 1200px) {
+  #wrapper #left-container {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+}
+
 #wrapper #left-container #main-ui {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,13 +79,89 @@ body {
           flex: 1;
 }
 
+@media (min-width: 1200px) {
+  #wrapper #right-container {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+  }
+}
+
 .title-card {
-  background-color: #0157f8;
+  width: 100%;
 }
 
 .title-card h1 {
-  color: #000;
-  padding: 2rem 1rem 2rem 2rem;
+  color: #0157f8;
+  padding: 2rem 1rem 2rem 0;
   font-weight: 600;
+  text-shadow: 1px 1px #b0b8ff, 0 0 0.2rem #afd5ff;
+}
+
+.title-card img {
+  width: 200px;
+  float: right;
+}
+
+form {
+  width: 80%;
+  padding-bottom: 2rem;
+  padding-top: 1.2rem;
+}
+
+form .text-input {
+  margin-bottom: 1.2rem;
+  width: 100%;
+  border: 1px solid #0157f8;
+  border-radius: 2px;
+  background: #b0b8ff;
+  color: #0157f8;
+  padding: .5rem 1rem;
+  line-height: 1.3rem;
+}
+
+form button {
+  width: 100%;
+  padding: .2rem 0;
+  line-height: 1.3rem;
+  border: 2px solid #b0b8ff;
+  border-radius: 4px;
+  background: transparent;
+  color: #b0b8ff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+form button:hover {
+  background: #0157f8;
+  color: #b0b8ff;
+  font-size: 1.1rem;
+}
+
+.option-bar {
+  background: #afd5ff;
+  width: 80%;
+  text-align: center;
+}
+
+.option-bar .btn {
+  padding: 1.1rem;
+  color: #01002e;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.option-bar .btn:hover {
+  background: #0157f8;
+  color: #b0b8ff;
+  font-size: 1.1rem;
+}
+
+.option-bar .btn:hover {
+  font-size: 1rem;
+}
+
+.option-bar .hotel, .option-bar .tourist-att {
+  border-bottom: 2px solid #01002e;
 }
 /*# sourceMappingURL=main.css.map */

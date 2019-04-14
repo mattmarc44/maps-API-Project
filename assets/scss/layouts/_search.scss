@@ -1,0 +1,28 @@
+form {
+    width: 80%;
+    padding-bottom: 2rem;
+    padding-top: 1.2rem;
+
+    .text-input {
+        margin-bottom: 1.2rem;
+        width: 100%;
+        border: 1px solid $primary-col;
+        border-radius: 2px;
+        background: $secondary-col;
+        color: $primary-col;
+        padding: .5rem 1rem;
+        line-height: 1.3rem;
+    }
+
+    button {
+        width: 100%;
+        padding: .2rem 0;
+        line-height: 1.3rem;
+        border: 2px solid $secondary-col;
+        border-radius: 4px;
+        background: transparent;
+        color: $secondary-col;
+        @include hoverClass
+    }
+}
+

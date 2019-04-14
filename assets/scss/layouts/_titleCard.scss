@@ -1,9 +1,15 @@
 .title-card {
-    background-color: $primary-col;
+    width: 100%;
 
     h1 {
-        color: $secondary-col;
-        padding: 2rem 1rem 2rem 2rem;
+        color: $primary-col;
+        padding: 2rem 1rem 2rem 0;
         font-weight: 600;
+        text-shadow: 1px 1px $secondary-col, 0 0 .2rem $accent-col;
+    }
+
+    img {
+        width: 200px;
+        float: right;
     }
 }

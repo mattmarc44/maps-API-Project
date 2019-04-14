@@ -1,0 +1,17 @@
+.option-bar{
+    background: $accent-col;
+    width: 80%;
+    text-align: center;
+
+    .btn{
+        padding: 1.1rem;
+        color: $background-col;
+        @include hoverClass;
+        //to keep the transition on this button smooth
+        &:hover { font-size: 1rem; }
+    }
+
+    .hotel, .tourist-att {
+        border-bottom: 2px solid $background-col;
+    }
+}

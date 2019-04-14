@@ -1,5 +1,6 @@
 //base
 @import './base/variables';
+@import './base/mixins';
 @import './base/base';
 
 //components
@@ -9,4 +10,5 @@
 //layout
 @import './layouts/layout';
 @import './layouts/titleCard';
+@import './layouts/search';
 @import './layouts/optionsBar';
